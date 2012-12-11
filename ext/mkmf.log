@@ -1,0 +1,58 @@
+have_library: checking for main() in -lidn... -------------------- yes
+
+"gcc -o conftest -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1/i686-linux -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1/ruby/backward -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/tiburon/.rvm/usr/include -O3 -fPIC conftest.c  -L. -L/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/lib -Wl,-R/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/lib -L/home/tiburon/.rvm/usr/lib -Wl,-R/home/tiburon/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic -L/home/tiburon/.rvm/usr/lib  -Wl,-R/home/tiburon/.rvm/usr/lib      -Wl,-R -Wl,/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/lib -L/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"gcc -o conftest -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1/i686-linux -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1/ruby/backward -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/tiburon/.rvm/usr/include -O3 -fPIC conftest.c  -L. -L/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/lib -Wl,-R/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/lib -L/home/tiburon/.rvm/usr/lib -Wl,-R/home/tiburon/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic -L/home/tiburon/.rvm/usr/lib  -Wl,-R/home/tiburon/.rvm/usr/lib      -Wl,-R -Wl,/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/lib -L/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/lib -lruby -lidn  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for idna.h... -------------------- yes
+
+"gcc -E -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1/i686-linux -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1/ruby/backward -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/tiburon/.rvm/usr/include -O3 -fPIC  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <idna.h>
+/* end */
+
+--------------------
+
+have_header: checking for punycode.h... -------------------- yes
+
+"gcc -E -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1/i686-linux -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1/ruby/backward -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/tiburon/.rvm/usr/include -O3 -fPIC  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <punycode.h>
+/* end */
+
+--------------------
+
+have_header: checking for stringprep.h... -------------------- yes
+
+"gcc -E -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1/i686-linux -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1/ruby/backward -I/home/tiburon/.rvm/rubies/ruby-1.9.3-p327-perf/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/tiburon/.rvm/usr/include -O3 -fPIC  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stringprep.h>
+/* end */
+
+--------------------
+
